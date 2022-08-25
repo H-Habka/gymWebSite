@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/gymWebSite/static/css/main.e6f73f3d.css",
+    "main.js": "/gymWebSite/static/js/main.ce1b62dc.js",
+    "static/media/hero1.webp": "/gymWebSite/static/media/hero1.7773415975bb59a784f5.webp",
+    "static/media/caro1.webp": "/gymWebSite/static/media/caro1.21ade9d1f76d7492eade.webp",
+    "static/media/caro2.webp": "/gymWebSite/static/media/caro2.eb764e3b7c8841a7b32b.webp",
+    "static/media/img2.webp": "/gymWebSite/static/media/img2.a51e92456aefd3bf56af.webp",
+    "static/media/img1.webp": "/gymWebSite/static/media/img1.b0793a98c253ec1fcbfb.webp",
+    "static/media/caro3.webp": "/gymWebSite/static/media/caro3.4a418e0e8978e6e6941a.webp",
+    "static/media/img3.webp": "/gymWebSite/static/media/img3.7473a3b4dde3204bc410.webp",
+    "static/media/img4.webp": "/gymWebSite/static/media/img4.bca925b7d7447aca27c2.webp",
+    "static/media/hero2.webp": "/gymWebSite/static/media/hero2.9b62cbe9a90b86223745.webp",
+    "static/media/bars.webp": "/gymWebSite/static/media/bars.77509744c8b729878988.webp",
+    "static/media/bg.webp": "/gymWebSite/static/media/bg.ab4b10173186c4c1bf60.webp",
+    "static/media/check.webp": "/gymWebSite/static/media/check.bf927ccedd2c9353e9dd.webp",
+    "static/media/TheFitClubLogo.webp": "/gymWebSite/static/media/TheFitClubLogo.7f27180c733ed32ed986.webp",
+    "static/media/heart.webp": "/gymWebSite/static/media/heart.efc28f6762b7f5160ccc.webp",
+    "index.html": "/gymWebSite/index.html",
+    "static/media/adidas.webp": "/gymWebSite/static/media/adidas.712d56c2f042d31e4363.webp",
+    "static/media/NB.webp": "/gymWebSite/static/media/NB.32277f71cf58a7893b08.webp",
+    "static/media/nick.webp": "/gymWebSite/static/media/nick.eea8108d6ffac4a842f7.webp",
+    "static/media/white-check.webp": "/gymWebSite/static/media/white-check.1039316d4cbcc103ea0c.webp",
+    "main.e6f73f3d.css.map": "/gymWebSite/static/css/main.e6f73f3d.css.map",
+    "main.ce1b62dc.js.map": "/gymWebSite/static/js/main.ce1b62dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6f73f3d.css",
+    "static/js/main.ce1b62dc.js"
+  ]
+}
