@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import HeroSection from "./components/HeroSection/HeroSection";
+import NavBar from "./components/NavBar/NavBar";
+import ProgramsSection from "./components/ProgramsSection/ProgramsSection";
+import StartJourneySection from "./components/StartJourneySection/StartJourneySection";
+import TestimonialsSection from "./components/TestimonialsSection/TestimonialsSection";
+import bg from "./images/bg.webp";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    return (
+        <div
+            className="overflow-x-hidden bg-one"
+            style={{ backgroundImage: `url(${bg})` }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            <NavBar />
+            <HeroSection />
+            <ProgramsSection />
+            <StartJourneySection />
+            <TestimonialsSection />
+        </div>
+    );
 }
 
 export default App;
