@@ -12,7 +12,7 @@ const ContentWithIcon = ({ icon, content, bgGradient }) => {
                     <img src={WhiteCheck} alt="check" style={{flex:1/6}}/>
                 )}
             </div>
-            <p className="text-white" style={{flex:5/6}}>{content}</p>
+            <p className="text-white" style={{flex:5/6}}>{content.toUpperCase()}</p>
         </div>
     );
 };

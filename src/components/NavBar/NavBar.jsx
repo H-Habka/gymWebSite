@@ -56,9 +56,9 @@ const NavBar = () => {
                 <NavbarItem href="#testimonials" title="Testimonials" />
             </div>
             <div>
-                <button className="hover:bg-one bg-white hover:text-white text-one px-6 py-2 text-lg font-semibold">
+                <a href="https://api.whatsapp.com/send?phone=971565561153&text=Hi" target="_blank"  rel="noreferrer" className="hover:bg-one bg-white hover:text-white text-one px-6 py-2 text-lg font-semibold">
                     join now
-                </button>
+                </a>
             </div>
         </div>
     );
