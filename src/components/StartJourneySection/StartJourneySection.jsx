@@ -22,7 +22,7 @@ const StartJourneySection = () => {
             "One month follow-up",
             "A diet with supplements and vitamins added when needed",
           ]}
-          whatsappMessage="Hi, coach I Want to Subscribe to STARTER PLAN"
+          whatsappMessage="Hi, coach I Want to Subscribe to NUTRITIONAL PLAN"
         />
         <PlanCard
           icon={<AiTwotoneFire size={44} />}

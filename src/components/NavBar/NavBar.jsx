@@ -38,14 +38,15 @@ const NavBar = () => {
            ${
                showNavbar
                    ? ` top-0 ${isSkiped ? "bg-gray-900" : "bg-transparent"} `
-                   : " -top-20 "
+                   : " -top-[120px] "
            }`}
         >
-            <div className="w-44 sm:w-52">
+            <div className=" sm:w-52">
                 <img
                     loading="lazy"
-                    src={require("../../images/TheFitClubLogo.webp")}
+                    src={require("../../images/logo_for_dark.png")}
                     alt="logo"
+                    className="w-[130px]"
                 />
             </div>
             <div className="lg:flex gap-4 items-center text-white text-xl hidden">
