@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import HeroSection from "./components/HeroSection/HeroSection"
 import NavBar from "./components/NavBar/NavBar"
 import ProgramsSection from "./components/ProgramsSection/ProgramsSection"
