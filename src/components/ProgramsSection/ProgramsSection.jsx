@@ -44,31 +44,35 @@ const ProgramsSection = () => {
         <div className="flex lg:gap-4 md:gap-2 gap-1 flex-1 justify-between">
           <div>
             <img
+              className="w-[360px] "
               loading="lazy"
-              src={require("../../images/img1.webp")}
+              src={require("../../images/test2.webp")}
               alt="img1"
             />
           </div>
           <div className="flex flex-col lg:gap-4 md:gap-2 gap-1  ">
-            <div>
+            <div className=" ">
               <img
+                className="w-[500px]"
                 loading="lazy"
-                src={require("../../images/img2.webp")}
+                src={require("../../images/test3.webp")}
                 alt="img2"
               />
             </div>
             <div className="flex lg:gap-4 md:gap-2 gap-1  ">
               <div>
                 <img
+                  className="w-[345px]"
                   loading="lazy"
-                  src={require("../../images/img3.webp")}
+                  src={require("../../images/test4.webp")}
                   alt="img3"
                 />
               </div>
               <div>
                 <img
+                  className="w-[230px]"
                   loading="lazy"
-                  src={require("../../images/img4.webp")}
+                  src={require("../../images/test5.webp")}
                   alt="img4"
                 />
               </div>

@@ -8,12 +8,19 @@ const HeroSection = () => {
     <div id="home" className="flex flex-col md:flex-row">
       <div className="w-full md:w-9/12 pt-40 ">
         <div className="flex flex-col gap-8 px-2 md:px-10 md:w-10/12 w-full items-center md:items-start ">
-          <div className="z-1 relative bg-[#343434] p-3 w-fit rounded-full border-8 border-[#343434] before:absolute before:bg-two before:rounded-full before:w-4/12 before:h-full before:top-0 before:-z-1 hover:before:left-0 before:left-[66.66%] before:transition-all before:duration-1000 ">
+          <div
+            data-aos="fade-right"
+            className="z-1 relative bg-[#343434] p-3 w-fit rounded-full border-8 border-[#343434] before:absolute before:bg-two before:rounded-full before:w-4/12 before:h-full before:top-0 before:-z-1 hover:before:left-0 before:left-[66.66%] before:transition-all before:duration-1000 "
+          >
             <p className="text-white sm:tracking-wider text-sm sm:text-base">
               THE BEST COACH IN THE TOWN
             </p>
           </div>
-          <h1 className="text-5xl sm:text-6xl font-bold flex flex-col gap-4">
+          <h1
+            data-aos="fade-right"
+            data-aos-delay="100"
+            className="text-5xl sm:text-6xl font-bold flex flex-col gap-4"
+          >
             <div style={{ boxShadow: "0 0 10000px 80px #f48915" }} />
             <p>
               <StrokText content="SHAPE" />{" "}
@@ -21,12 +28,20 @@ const HeroSection = () => {
             </p>
             <p className="text-white"> IDEAL BODY</p>
           </h1>
-          <p className="text-white tracking-widest text-center px-2 sm:px-20 md:px-0 md:text-start">
+          <p
+            data-aos="fade-right"
+            data-aos-delay="200"
+            className="text-white tracking-widest text-center px-2 sm:px-20 md:px-0 md:text-start"
+          >
             In here I will help you to shape and build your ideal body and live
             up your life to fullest
           </p>
 
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-8 md:gap-4">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="300"
+            className="flex flex-col lg:flex-row justify-between items-center gap-8 md:gap-4"
+          >
             <div className="flex gap-2 md:gap-6 flex-wrap md:flex-nowrap justify-center">
               {/* <RectangleComponent
                                 number="+ 140"
@@ -48,7 +63,7 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-right" data-aos-delay="400">
             <a
               href="https://api.whatsapp.com/send?phone=971565561153"
               target="_blank"

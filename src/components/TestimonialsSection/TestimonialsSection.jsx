@@ -9,22 +9,22 @@ import {
 const caro = [
   {
     id: 1,
-    image: "TESTIMONIALS1.jpg",
-    text: `From a scrawny beginner to a muscle-bound powerhouse, our coaching program has been a transformative journey for me. The results speak for themselves!. I never thought I could achieve this level of strength and definition. Thanks to our coach, I’ve become the best version of myself.`,
+    image: "TESTIMONIALS1.webp",
+    text: `From a scrawny beginner to a muscle-bound powerhouse, our coaching program has been a transformative journey for me. The results speak for themselves!. I never thought I could achieve this level of strength.`,
     poster: "Yousef",
     role: "",
   },
   {
     id: 2,
     image: "TESTIMONIALS2.jpg",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicingelit. Voluptatem officia vel nulla quasi minimasuscipit, facere similique. Quae, dolorem id? Voluptatum quos doloremque mollitia incidunt saepe quam tenetur natus tempora.",
+    text: "Our coach’s expertise and personalized guidance have been invaluable. I’ve learned proper form, nutrition, and discipline, His impact goes beyond physical fitness; he’s positively transformed my lifestyle.",
     poster: "Omar",
     role: "",
   },
   {
     id: 3,
     image: "TESTIMONIALS3.jpg",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicingelit. Voluptatem officia vel nulla quasi minimasuscipit, facere similique. Quae, dolorem id? Voluptatum quos doloremque mollitia incidunt saepe quam tenetur natus tempora.",
+    text: "My coach knows how to make workouts enjoyable. I’ve become addicted to fitness thanks to their approach, My coach knows how to make workouts enjoyable. I’ve become addicted to fitness thanks to their approach.",
     poster: "Mohammad",
     role: "",
   },
@@ -50,7 +50,7 @@ const TestimonialsSection = () => {
               <p>SAY ABOUT US</p>
             </div>
           </div>
-          <div className="relative leading-10 tracking-wider md:w-11/12  min-h-[240px] ">
+          <div className="relative leading-10 tracking-wider md:w-11/12  min-h-[290px] ">
             {caro.map((item, idx) => {
               return (
                 <div
