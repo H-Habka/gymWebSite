@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import StrokText from "../StrokText"
-import CustomButton from "../CustomButton"
+import { GrYoutube } from "react-icons/gr"
 import {
   BsFillArrowLeftCircleFill,
   BsFillArrowRightCircleFill,
@@ -126,12 +126,62 @@ const TestimonialsSection = () => {
             <span>YOUR BODY</span> <StrokText content="WITH US?" />
           </p>
         </div>
-        <div className="py-2 bg-gray-400 flex gap-1 flex-col xs:flex-row xs:py-2">
+        {/* <div className="py-2 bg-gray-400 flex gap-1 flex-col xs:flex-row xs:py-2">
           <input
             placeholder="Enter Your Email Address Here"
             className="outline-none text-lg text-white w-64 bg-transparent px-2 placeholder:text-white"
           />
           <CustomButton title="Join Now" />
+        </div> */}
+        <div className="flex gap-4 items-center">
+          <a
+            href="https://www.youtube.com/@hassanarafa5967"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="relative before:bg-white before:absolute before:w-3 before:h-3 before:left-[10px] before:top-[10px] z-[1] before:z-[-1]">
+              <GrYoutube className="relative w-8 h-8 fill-[#FF0000] " />
+            </div>
+          </a>
+          <a
+            href="https://www.tiktok.com/@7assanarafa4?_t=8nyDqDypbQf&_r=1"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="">
+              <img
+                src={require("../../images/tiktok.png")}
+                alt="tiktok"
+                className="w-7 h-7"
+              />
+            </div>
+          </a>
+          <a
+            href="https://snapchat.com/t/vD7d4Yg4"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="">
+              <img
+                src={require("../../images/snapchat.png")}
+                alt="tiktok"
+                className="w-7 h-7"
+              />
+            </div>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100092860981494&mibextid=LQQJ4d"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="">
+              <img
+                src={require("../../images/facebook.png")}
+                alt="tiktok"
+                className="w-7 h-7"
+              />
+            </div>
+          </a>
         </div>
       </div>
     </div>
