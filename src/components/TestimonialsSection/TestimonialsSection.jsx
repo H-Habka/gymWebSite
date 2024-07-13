@@ -164,7 +164,7 @@ const TestimonialsSection = () => {
             <div className="">
               <img
                 src={require("../../images/snapchat.png")}
-                alt="tiktok"
+                alt="snapchat"
                 className="w-7 h-7"
               />
             </div>
@@ -177,7 +177,7 @@ const TestimonialsSection = () => {
             <div className="">
               <img
                 src={require("../../images/facebook.png")}
-                alt="tiktok"
+                alt="facebook"
                 className="w-7 h-7"
               />
             </div>
