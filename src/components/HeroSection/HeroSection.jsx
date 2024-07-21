@@ -1,5 +1,4 @@
 import React from "react"
-import RectangleComponent from "./RectangleComponent"
 import CustomButton from "../CustomButton"
 import StrokText from "../StrokText"
 
