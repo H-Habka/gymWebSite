@@ -48,12 +48,13 @@ const NavBar = () => {
                     alt="logo"
                 />
             </div> */}
-      <div className="lg:flex gap-4 items-center text-white text-xl hidden py-6">
+      <div className="flex gap-4 items-center text-white text-xl py-6">
         <NavbarItem href="#home" title="Home" />
         <NavbarItem href="#programs" title="Programs" />
-        <NavbarItem href="#whyUs" title="Why us" />
+        <NavbarItem href="/official-docs" title="Official docs" />
+        {/* <NavbarItem href="#whyUs" title="Why us" />
         <NavbarItem href="#plans" title="Plans" />
-        <NavbarItem href="#testimonials" title="Testimonials" />
+        <NavbarItem href="#testimonials" title="Testimonials" /> */}
       </div>
       {/* <div>
                 <button className="hover:bg-one bg-white hover:text-white text-one px-6 py-2 text-lg font-semibold">

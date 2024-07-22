@@ -26,6 +26,7 @@ function App() {
               </>
             )}
           />
+          <Route path="/official-docs" Component={() => <>docs</>} />
         </Routes>
       </div>
     </Router>
