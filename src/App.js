@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSection/HeroSection"
 import NavBar from "./components/NavBar/NavBar"
+import OfficialDocs from "./components/official-docs"
 import ProgramsSection from "./components/ProgramsSection/ProgramsSection"
 import StartJourneySection from "./components/StartJourneySection/StartJourneySection"
 import TestimonialsSection from "./components/TestimonialsSection/TestimonialsSection"
@@ -26,7 +27,7 @@ function App() {
               </>
             )}
           />
-          <Route path="/official-docs" Component={() => <>docs</>} />
+          <Route path="/official-docs" Component={() => <OfficialDocs />} />
         </Routes>
       </div>
     </Router>
