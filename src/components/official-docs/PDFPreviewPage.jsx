@@ -9,7 +9,7 @@ import LanguageExamForMasterDegree from "../../assets/Language-exam-For-Master-D
 import MarineEngineeringGraduationDocument from "../../assets/Marine-Engineering-Graduation-Document.pdf"
 import MaritimeMedicalCertificate from "../../assets/maritime-medical-certificate.pdf"
 import MasterLanguageExam from "../../assets/Master-language-exam.pdf"
-import { useLocation, useNavigate, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 
 const pdfSelector = {
   AlBaselCertificate,
