@@ -4,7 +4,7 @@ import PDFViewer from "./PDFViewer"
 const OfficialDocs = () => {
   return (
     <div className="my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 gap-4">
-      <a href="/preview/AlBaselCertificate" target="_blank">
+      <a href="/preview/AlBaselCertificate">
         <PDFViewer title="Al Basel Certificate" />
       </a>
       <a href="/preview/BasicTrainingAndSecurityAwareness">
