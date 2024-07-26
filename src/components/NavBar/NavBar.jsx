@@ -50,7 +50,7 @@ const NavBar = () => {
             </div> */}
       <div className="flex gap-4 items-center text-white text-xl py-6">
         <NavbarItem href="#home" title="Home" />
-        <NavbarItem href="#programs" title="Programs" />
+        <NavbarItem href="/test" title="Programs" />
         <NavbarItem href="/official-docs" title="Official docs" />
         {/* <NavbarItem href="#whyUs" title="Why us" />
         <NavbarItem href="#plans" title="Plans" />

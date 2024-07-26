@@ -1,11 +1,9 @@
 import HeroSection from "./components/HeroSection/HeroSection"
 import NavBar from "./components/NavBar/NavBar"
 import OfficialDocs from "./components/official-docs"
-import ProgramsSection from "./components/ProgramsSection/ProgramsSection"
-import StartJourneySection from "./components/StartJourneySection/StartJourneySection"
-import TestimonialsSection from "./components/TestimonialsSection/TestimonialsSection"
 import bg from "./images/bg.webp"
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
+import PDFPreviewPage from "./components/official-docs/PDFPreviewPage"
 
 function App() {
   return (
@@ -14,20 +12,32 @@ function App() {
         className="overflow-x-hidden bg-one"
         style={{ backgroundImage: `url(${bg})` }}
       >
-        <NavBar />
         <Routes>
           <Route
             path="/"
             Component={() => (
               <>
+                <NavBar />
                 <HeroSection />
-                <ProgramsSection />
+                {/* <ProgramsSection />
                 <StartJourneySection />
-                <TestimonialsSection />
+                <TestimonialsSection /> */}
               </>
             )}
           />
-          <Route path="/official-docs" Component={() => <OfficialDocs />} />
+          <Route
+            path="/official-docs"
+            Component={() => (
+              <>
+                <NavBar />
+                <OfficialDocs />
+              </>
+            )}
+          />
+          <Route
+            path="/preview/:fileName"
+            Component={() => <PDFPreviewPage />}
+          />
         </Routes>
       </div>
     </Router>
