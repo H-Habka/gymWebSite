@@ -18,16 +18,18 @@ const StartJourneySection = () => {
           icon={<AiTwotoneFire size={44} />}
           title="NUTRITIONAL PLAN"
           price="45"
+          planNumber={1}
           details={[
             "One month follow-up",
             "A diet with supplements and vitamins added when needed",
           ]}
           whatsappMessage="Hi, coach I Want to Subscribe to NUTRITIONAL PLAN"
-        />
+          />
         <PlanCard
           icon={<AiTwotoneFire size={44} />}
           title="BASIC PLAN"
           price="120"
+          planNumber={2}
           details={[
             "One month follow-up",
             "All In NUTRITIONAL plan",
@@ -37,6 +39,7 @@ const StartJourneySection = () => {
         />
         <PlanCard
           icon={<TbHeartPlus size={44} />}
+          planNumber={3}
           title="PREMIUM PLAN"
           price="280"
           details={[
@@ -45,8 +48,9 @@ const StartJourneySection = () => {
             "A strict training regimen for bodybuilding competitions",
           ]}
           whatsappMessage="Hi, coach I Want to Subscribe to BASIC PLAN"
-        />
+          />
         <PlanCard
+          planNumber={4}
           icon={<FaCrown size={44} />}
           title="PRO PLAN"
           price="450"
