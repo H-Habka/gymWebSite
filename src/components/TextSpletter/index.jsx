@@ -1,18 +1,22 @@
 import React, { useRef } from "react"
 
-const TextSplitter = ({ text, strokeCount }) => {
+const TextSplitter = ({ text, strokeWordsArray }) => {
   const arrayOfWords = text.split(" ")
   const counter = useRef(0)
   return (
     <div className="flex flex-wrap">
       {arrayOfWords.map((word, i) => {
         return (
-          <div>
+          <div key={i}>
             {word.split("").map((letter, j) => {
               counter.current = counter.current + 1
-              if (i < strokeCount)
+              if (
+                Array.isArray(strokeWordsArray) &&
+                strokeWordsArray.includes(i)
+              )
                 return (
                   <span
+                    key={j}
                     style={{ WebkitTextStroke: "1px white" }}
                     className={`text-transparent`}
                     data-aos="fade-right"
@@ -23,6 +27,7 @@ const TextSplitter = ({ text, strokeCount }) => {
                 )
               return (
                 <span
+                  key={j}
                   data-aos="fade-right"
                   data-aos-delay={counter.current * 50}
                 >

@@ -1,5 +1,4 @@
 import React from "react"
-import StrokText from "../StrokText"
 import TextSplitter from "../TextSpletter"
 import { FaLinkedinIn, FaFacebook, FaInstagram } from "react-icons/fa"
 import { FaWhatsapp } from "react-icons/fa"
@@ -15,15 +14,16 @@ const GetInTouchSection = () => {
           data-aos="fade-up"
           className="group relative cursor-pointer hover:scale-105 transition-all duration-300 h-[260px] rounded-xl bg-[#12121222] w-[80vw]"
         >
-          <p className="absolute text-white tracking-wider  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-500 group-hover:opacity-100">
-            <TextSplitter strokeCount={1} text="hasanhabka9@gmail.com " />
-          </p>
+          <div className="absolute text-white tracking-wider  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-500 group-hover:opacity-100">
+            <TextSplitter
+              strokeWordsArray={[0]}
+              text="hasanhabka9@gmail.com "
+            />
+          </div>
           <div className="absolute bottom-0  translate-y-1/2 left-0 w-full text-center">
-            <p className="pointer-events-none text-[10em] flex items-center gap-6 justify-center font-[900]">
-              <span className="text-white">GET</span>
-              <StrokText content="IN" />
-              <span className="text-white">TOUCH</span>
-            </p>
+            <div className="text-white pointer-events-none text-[10em] flex items-center gap-6 justify-center font-[900]">
+              <TextSplitter strokeWordsArray={[1]} text="GET IN TOUCH" />
+            </div>
           </div>
         </div>
       </a>

@@ -4,6 +4,7 @@ import { lazy, Suspense } from "react"
 import "aos/dist/aos.css"
 import Aos from "aos"
 import Loader from "./components/Loader"
+import NavbarV2 from "./components/NavBar/v2"
 
 const OfficialDocs = lazy(() => import("./components/official-docs"))
 const SoftwareExperience = lazy(() => import("./components/softwareExperience"))
@@ -16,7 +17,6 @@ const PDFPreviewPage = lazy(() =>
 const HeroSection = lazy(() => import("./components/HeroSection/HeroSection"))
 const AboutMeSection = lazy(() => import("./components/AboutMeSection/index"))
 const LatestWork = lazy(() => import("./components/latestWork/index"))
-const NavBar = lazy(() => import("./components/NavBar/NavBar"))
 const GetInTouchSection = lazy(() => import("./components/GetInTouchSection"))
 
 function App() {
@@ -26,16 +26,13 @@ function App() {
   return (
     <Suspense fallback={<Loader />}>
       <Router>
-        <div
-          className="bg-one"
-          style={{ backgroundImage: `url(${bg})` }}
-        >
+        <div className="bg-one" style={{ backgroundImage: `url(${bg})` }}>
           <Routes>
             <Route
               path="/"
               Component={() => (
                 <>
-                  {/* <NavBar /> */}
+                  <NavbarV2 />
                   <HeroSection />
                   <AboutMeSection />
                   <SoftwareExperience />
@@ -52,7 +49,7 @@ function App() {
               path="/official-docs"
               Component={() => (
                 <>
-                  <NavBar />
+                  <NavbarV2 />
                   <OfficialDocs />
                 </>
               )}

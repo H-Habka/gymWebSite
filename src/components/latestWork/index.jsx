@@ -9,10 +9,7 @@ const LatestWork = () => {
         <div className="sticky -top-2">
           <div className="relative justify-center flex">
             <div className="text-[7em] flex items-center gap-6 justify-center font-[900] text-white  top-[100px]">
-              {/* <StrokText content="ABOUT" />
-        <span className="text-white">ME</span> */}
-              <TextSplitter text="LATEST" />
-              <TextSplitter strokeCount={1} text="WORK" />
+              <TextSplitter strokeWordsArray={[1]} text="LATEST WORK" />
             </div>
           </div>
         </div>

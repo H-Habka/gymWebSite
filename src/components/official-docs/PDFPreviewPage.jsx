@@ -26,7 +26,6 @@ const pdfSelector = {
 
 const PDFPreviewPage = () => {
   const params = useParams()
-  console.log({ params })
   return (
     <object
       aria-label="pdf"

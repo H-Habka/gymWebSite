@@ -8,17 +8,17 @@ const AboutMe = () => {
         <div className="pointer-events-none text-[7em] flex items-center gap-6 justify-center font-[900] text-white">
           {/* <StrokText content="ABOUT" />
           <span className="text-white">ME</span> */}
-          <TextSplitter
-            strokeCount={1}
-            text="ABOUT ME"
-          />
+          <TextSplitter strokeWordsArray={[0]} text="ABOUT ME" />
         </div>
         <div className="absolute bottom-0 mix-blend-darken  w-full h-1/2 bg-orange-300"></div>
       </div>
-      <div data-aos="fade-up" className="py-20 flex flex-col  md:flex-row gap-6 justify-around  bg-[#12121222] p-8 rounded-xl">
+      <div
+        data-aos="fade-up"
+        className="py-20 flex flex-col  md:flex-row gap-6 justify-around  bg-[#12121222] p-8 rounded-xl"
+      >
         <div className="text-6xl md:max-w-[40vw] flex gap-2 text-four">
           <TextSplitter
-            strokeCount={1}
+            strokeWordsArray={[0]}
             text="Hi, I'm Yacht and Jewellery designer"
           />
         </div>
