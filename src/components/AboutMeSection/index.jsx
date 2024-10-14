@@ -6,8 +6,6 @@ const AboutMe = () => {
     <div className="md:px-[10vw] min-h-screen flex flex-col justify-center">
       <div className="relative justify-center flex mt-10">
         <div className="pointer-events-none text-[7em] flex items-center gap-6 justify-center font-[900] text-white">
-          {/* <StrokText content="ABOUT" />
-          <span className="text-white">ME</span> */}
           <TextSplitter strokeWordsArray={[0]} text="ABOUT ME" />
         </div>
         <div className="absolute bottom-0 mix-blend-darken  w-full h-1/2 bg-orange-300"></div>

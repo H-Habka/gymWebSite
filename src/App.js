@@ -1,10 +1,11 @@
-import bg from "./images/bg.webp"
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
 import { lazy, Suspense } from "react"
 import "aos/dist/aos.css"
 import Aos from "aos"
 import Loader from "./components/Loader"
 import NavbarV2 from "./components/NavBar/v2"
+import ProjectPage from "./components/ProjectPage"
+import ScrollToTop from "./components/scrollTop"
 
 const OfficialDocs = lazy(() => import("./components/official-docs"))
 const SoftwareExperience = lazy(() => import("./components/softwareExperience"))
@@ -16,7 +17,7 @@ const PDFPreviewPage = lazy(() =>
 )
 const HeroSection = lazy(() => import("./components/HeroSection/HeroSection"))
 const AboutMeSection = lazy(() => import("./components/AboutMeSection/index"))
-const LatestWork = lazy(() => import("./components/latestWork/index"))
+const WorkSection = lazy(() => import("./components/WorkSection/index"))
 const GetInTouchSection = lazy(() => import("./components/GetInTouchSection"))
 
 function App() {
@@ -26,22 +27,23 @@ function App() {
   return (
     <Suspense fallback={<Loader />}>
       <Router>
-        <div className="bg-one" style={{ backgroundImage: `url(${bg})` }}>
+        <ScrollToTop />
+        <div
+          className="bg-one"
+          style={{ backgroundImage: `url(/images/bg.webp)` }}
+        >
+          <NavbarV2 />
           <Routes>
             <Route
               path="/"
               Component={() => (
                 <>
-                  <NavbarV2 />
                   <HeroSection />
                   <AboutMeSection />
                   <SoftwareExperience />
-                  <LatestWork />
+                  <WorkSection isSticky title="LATEST WORK" />
                   <CompaniesIworkedWith />
                   <GetInTouchSection />
-                  {/* <ProgramsSection />
-                <StartJourneySection />
-                <TestimonialsSection /> */}
                 </>
               )}
             />
@@ -49,7 +51,6 @@ function App() {
               path="/official-docs"
               Component={() => (
                 <>
-                  <NavbarV2 />
                   <OfficialDocs />
                 </>
               )}
@@ -57,6 +58,10 @@ function App() {
             <Route
               path="/preview/:fileName"
               Component={() => <PDFPreviewPage />}
+            />
+            <Route
+              path="/projects/:projectName"
+              Component={() => <ProjectPage />}
             />
           </Routes>
         </div>

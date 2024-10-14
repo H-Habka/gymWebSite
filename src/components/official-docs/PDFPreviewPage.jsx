@@ -1,39 +1,50 @@
 import React from "react"
-import AlBaselCertificate from "../../assets/Al-Basel-Certificate.pdf"
-import BasicTrainingAndSecurityAwareness from "../../assets/Basic-Training-&-security-awareness.pdf"
-import BasicTrainingAndSecurityAwareness2 from "../../assets/Basic-Training-&-security-awareness2.pdf"
-import CertificateOfAppreciationFromTheEngineersSyndicate from "../../assets/Certificate-of-appreciation-from-the-Engineers-Syndicate.pdf"
-import CertificateOfTheDiplomaOfGeneralSecondaryStudies from "../../assets/Certificate-of-the-Diploma-of-general-secondary-studies.pdf"
-import GradesSheet from "../../assets/Grades-sheet.pdf"
-import LanguageExamForMasterDegree from "../../assets/Language-exam-For-Master-Degree.pdf"
-import MarineEngineeringGraduationDocument from "../../assets/Marine-Engineering-Graduation-Document.pdf"
-import MaritimeMedicalCertificate from "../../assets/maritime-medical-certificate.pdf"
-import MasterLanguageExam from "../../assets/Master-language-exam.pdf"
 import { useParams } from "react-router-dom"
 
 const pdfSelector = {
-  AlBaselCertificate,
-  BasicTrainingAndSecurityAwareness,
-  BasicTrainingAndSecurityAwareness2,
-  CertificateOfAppreciationFromTheEngineersSyndicate,
-  CertificateOfTheDiplomaOfGeneralSecondaryStudies,
-  GradesSheet,
-  LanguageExamForMasterDegree,
-  MarineEngineeringGraduationDocument,
-  MaritimeMedicalCertificate,
-  MasterLanguageExam,
+  AlBaselCertificate:
+    "https://drive.google.com/file/d/1kwfVORkNbxip_Q7YhUDz9nTuPa8XUdVW/preview",
+  BasicTrainingAndSecurityAwareness:
+    "https://drive.google.com/file/d/1lidW7HhSP2yiFE6swT1mzGpQVu8AsCcQ/preview",
+  BasicTrainingAndSecurityAwareness2:
+    "https://drive.google.com/file/d/1Vx1Hv458iQW42jw0-DThPnfXrxU45oCc/preview",
+  CertificateOfAppreciationFromTheEngineersSyndicate:
+    "https://drive.google.com/file/d/1gnjsM670CmayibnGNFwOlCAHBS9FwPJt/preview",
+  CertificateOfTheDiplomaOfGeneralSecondaryStudies:
+    "https://drive.google.com/file/d/11-9FR1myPIPntE7B4McSYy51NWALvp8X/preview",
+  GradesSheet:
+    "https://drive.google.com/file/d/1vgnVZiasbHIYlB3yI79MpsCZjiqLz4rx/preview",
+  LanguageExamForMasterDegree:
+    "https://drive.google.com/file/d/1EltVytaiHfkYDhTMHxejXtfvPKpFMAXc/preview",
+  MarineEngineeringGraduationDocument:
+    "https://drive.google.com/file/d/1zRE8FC9RrCGgEpBxuY0ZlNwoOQMBO4qj/preview",
+  MaritimeMedicalCertificate:
+    "https://drive.google.com/file/d/1DPLYXWww5LBa3dpSEJP9uXrtGedMnfm7/preview",
+  MasterLanguageExam:
+    "https://drive.google.com/file/d/1QNOWBPlcVM0Y9dxOMdMNK_XTD7W0z6Q6/preview",
+  CertificateOfExperience:
+    "https://drive.google.com/file/d/1MMG3p2ZVzddSonjtLwgLChMvUEE_0W-2/preview",
+  MyCV: "https://drive.google.com/file/d/1uMMKBpQaG-XRuLswTqkegPWuo6ngfnOR/preview",
 }
 
-const PDFPreviewPage = () => {
+const PDFPrepreviewPage = () => {
   const params = useParams()
   return (
-    <object
-      aria-label="pdf"
-      className="w-screen h-screen"
-      data={pdfSelector[params["fileName"]]}
-      type="application/pdf"
+    // <object
+    //   aria-label="pdf"
+    //   className="w-screen h-screen"
+    //   // data={pdfSelector[params["fileName"]]}
+    //   data="https://drive.google.com/uc?id=1uWNb27HRJT5ycdBom6hBFeqbKzHTYBYg"
+    //   type="application/pdf"
+    // />
+    <iframe
+      src={pdfSelector[params["fileName"]]}
+      width="100%"
+      allow="autoplay"
+      className="h-screen"
+      title="pdf prepreview"
     />
   )
 }
 
-export default PDFPreviewPage
+export default PDFPrepreviewPage

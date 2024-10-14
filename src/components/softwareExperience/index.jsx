@@ -1,11 +1,6 @@
 import React from "react"
 import TextSplitter from "../TextSpletter"
-import autocad from "../../images/software/autocad.webp"
-import matrix from "../../images/software/matrix.webp"
-import maxsurf from "../../images/software/maxsurf.webp"
-import rhino from "../../images/software/rhino.webp"
-import sketchUp from "../../images/software/sketchUp.webp"
-import soldwork from "../../images/software/soldwork.webp"
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
 const SoftwareExperience = () => {
   return (
@@ -25,7 +20,7 @@ const SoftwareExperience = () => {
             data-aos="zoom-out"
             data-aos-delay="0"
           >
-            <img alt="autocad" src={autocad} />
+            <LazyLoadImage alt="autocad" src="https://i.imgur.com/Ti9KMsH.jpeg" />
           </a>
           <a
             href="https://gemvision.com/matrixgold"
@@ -34,7 +29,7 @@ const SoftwareExperience = () => {
             data-aos="zoom-out"
             data-aos-delay="250"
           >
-            <img alt="matrix" src={matrix} />
+            <LazyLoadImage alt="matrix" src="https://i.imgur.com/D8hbQWK.jpeg" />
           </a>
           <a
             href="https://maxsurf.net/"
@@ -43,7 +38,7 @@ const SoftwareExperience = () => {
             data-aos="zoom-out"
             data-aos-delay="500"
           >
-            <img alt="maxsurf" src={maxsurf} />
+            <LazyLoadImage alt="maxsurf" src="https://i.imgur.com/wCJkQre.jpeg" />
           </a>
           <a
             href="https://www.rhino3d.com/"
@@ -52,7 +47,7 @@ const SoftwareExperience = () => {
             data-aos="zoom-out"
             data-aos-delay="0"
           >
-            <img alt="rhino" src={rhino} />
+            <LazyLoadImage alt="rhino" src="https://i.imgur.com/kbr5fWo.jpeg" />
           </a>
           <a
             href="https://www.solidworks.com/"
@@ -61,7 +56,7 @@ const SoftwareExperience = () => {
             data-aos="zoom-out"
             data-aos-delay="250"
           >
-            <img alt="soldwork" src={soldwork} />
+            <LazyLoadImage alt="soldwork" src="https://i.imgur.com/areTsUj.jpeg" />
           </a>
           <a
             href="https://www.sketchup.com/en"
@@ -70,7 +65,7 @@ const SoftwareExperience = () => {
             data-aos="zoom-out"
             data-aos-delay="500"
           >
-            <img alt="sketchUp" src={sketchUp} />
+            <LazyLoadImage alt="sketchUp" src="https://i.imgur.com/zqazLIo.jpeg" />
           </a>
         </div>
       </div>

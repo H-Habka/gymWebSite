@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react"
 import { Link, useLocation } from "react-router-dom"
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
 const NavbarV2 = () => {
   const [showNavbar, setShowNavbar] = useState(true)
@@ -35,11 +36,11 @@ const NavbarV2 = () => {
   }, [showNavbar, isSkiped])
   return (
     <div
-      className={`transition-all duration-1000 w-full flex justify-between items-center sm:px-10 px-2 z-50 fixed 
+      className={`transition-all duration-1000  flex justify-between items-center sm:px-10 px-2 z-50 fixed 
            ${showNavbar ? ` top-0 ` : " -top-20 "}`}
     >
       <div
-        className={`bg-[#464646] z-1 relative transition-all duration-500 group rounded-b-md flex items-center gap-4  overflow-hidden ${
+        className={`bg-gradient-to-r from-[#373737] via-[#373737] to-[#3A3A3A] z-1 relative transition-all duration-500 group rounded-b-md flex items-center gap-4  overflow-hidden ${
           location.pathname !== "/official-docs" ? "hover:pr-[120px]" : ""
         }`}
       >
@@ -49,9 +50,9 @@ const NavbarV2 = () => {
         >
           <Link to="/">
             <div className="rounded-full bg-gray-200 grayscale hover:grayscale-0 cursor-pointer z-10">
-              <img
+              <LazyLoadImage
                 loading="lazy"
-                src={require("../../images/profile-small.png")}
+                src="/images/profile-small.png"
                 alt="profile"
                 className="w-10 h-10 rounded-full"
               />

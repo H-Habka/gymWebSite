@@ -1,7 +1,6 @@
 import React from "react"
 import TextSplitter from "../TextSpletter"
-import saray from "../../images/software/saray.webp"
-import mdh from "../../images/software/mdh.webp"
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
 const CompaniesIworkedWith = () => {
   return (
@@ -21,7 +20,7 @@ const CompaniesIworkedWith = () => {
             data-aos="zoom-out"
             data-aos-delay="0"
           >
-            <img alt="saray" src={saray} />
+            <LazyLoadImage alt="saray" src="https://i.imgur.com/E3HEC0X.jpeg" />
           </a>
           <a
             href="https://marinedesignhub.co.uk/"
@@ -30,7 +29,7 @@ const CompaniesIworkedWith = () => {
             data-aos="zoom-out"
             data-aos-delay="250"
           >
-            <img alt="mdh" src={mdh} />
+            <LazyLoadImage alt="mdh" src="https://i.imgur.com/bDPzNxQ.jpeg" />
           </a>
         </div>
       </div>
