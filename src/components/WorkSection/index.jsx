@@ -2,6 +2,7 @@ import React from "react"
 import TextSplitter from "../TextSpletter"
 import WorkCard from "./workCard"
 import { projectsDataAsArray } from "../../content/projects"
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
 const WorkSection = ({ title, isSticky, cardToHide }) => {
   return (
@@ -37,12 +38,12 @@ const WorkSection = ({ title, isSticky, cardToHide }) => {
                   key={project.name}
                 >
                   <div className="flex flex-col md:flex-row h-full">
-                    <img
+                    <LazyLoadImage
                       className="lg:w-1/2 flex-1 h-full"
                       src={project.photoGallery?.[0]?.images?.[0]?.original}
                       alt={project?.name}
                     />
-                    <img
+                    <LazyLoadImage
                       className="lg:w-1/2 flex-1 h-full"
                       src={project.photoGallery?.[0]?.images?.[1]?.original}
                       alt={project?.name}
