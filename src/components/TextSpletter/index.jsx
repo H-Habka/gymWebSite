@@ -4,7 +4,7 @@ const TextSplitter = ({ withoutAnimation, text, strokeWordsArray }) => {
   const arrayOfWords = text.split(" ")
   const counter = useRef(0)
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap justify-center">
       {arrayOfWords.map((word, i) => {
         return (
           <div key={i}>

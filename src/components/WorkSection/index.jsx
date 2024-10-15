@@ -1,45 +1,7 @@
 import React from "react"
 import TextSplitter from "../TextSpletter"
 import WorkCard from "./workCard"
-
-const projects = [
-  {
-    title: "Dockwise",
-    name: "dockwise",
-    CardContent: (
-      <div className="flex flex-col lg:flex-row h-full">
-        <img
-          className="lg:w-1/2 flex-1 "
-          src="https://i.imgur.com/kNKyprI.jpeg"
-          alt="dockwise"
-        />
-        <img
-          className="lg:w-1/2 flex-1"
-          src="https://i.imgur.com/8LZ7Wc1.jpeg"
-          alt="dockwise"
-        />
-      </div>
-    ),
-  },
-  {
-    title: "Dry Dock",
-    name: "dryDock",
-    CardContent: (
-      <div className="flex flex-col lg:flex-row h-full">
-        <img
-          className="lg:w-[61%] flex-1 "
-          src="https://i.imgur.com/HV5ckqw.jpeg"
-          alt="drydock"
-        />
-        <img
-          className=" lg:w-[39%] flex-1"
-          src="https://i.imgur.com/9LADgPW.jpeg"
-          alt="drydock"
-        />
-      </div>
-    ),
-  },
-]
+import { projectsDataAsArray } from "../../content/projects"
 
 const WorkSection = ({ title, isSticky, cardToHide }) => {
   return (
@@ -58,14 +20,14 @@ const WorkSection = ({ title, isSticky, cardToHide }) => {
         </div>
         <div
           className={`${
-            isSticky ? "sticky md:top-[30px] top-[20px]  " : "absolute top-10"
+            isSticky ? "sticky md:top-[30px] top-[20px]  " : "absolute top-2"
           }  left-0 z-1 w-full h-[50px]  mix-blend-darken  bg-orange-300`}
         ></div>
         <div
           data-aos="fade-up"
           className="flex flex-col gap-8 z-20 pb-8  md:px-8"
         >
-          {projects.map((project) => {
+          {projectsDataAsArray.map((project) => {
             return (
               project.name !== cardToHide && (
                 <WorkCard
@@ -74,7 +36,18 @@ const WorkSection = ({ title, isSticky, cardToHide }) => {
                   title={project.title}
                   key={project.name}
                 >
-                  {project.CardContent}
+                  <div className="flex flex-col md:flex-row h-full">
+                    <img
+                      className="lg:w-1/2 flex-1 h-full"
+                      src={project.photoGallery?.[0]?.images?.[0]?.original}
+                      alt={project?.name}
+                    />
+                    <img
+                      className="lg:w-1/2 flex-1 h-full"
+                      src={project.photoGallery?.[0]?.images?.[1]?.original}
+                      alt={project?.name}
+                    />
+                  </div>
                 </WorkCard>
               )
             )

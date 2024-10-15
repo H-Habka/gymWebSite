@@ -5,7 +5,7 @@ const PhotoGallery = ({ images }) => {
   return (
     <ImageGallery
       showPlayButton={false}
-      showFullscreenButton={false}
+      // showFullscreenButton={false}
       lazyLoad
       items={images}
       loading="lazy"

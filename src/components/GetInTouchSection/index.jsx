@@ -2,6 +2,7 @@ import React from "react"
 import TextSplitter from "../TextSpletter"
 import { FaLinkedinIn, FaFacebook, FaInstagram } from "react-icons/fa"
 import { FaWhatsapp } from "react-icons/fa"
+import { socialMediaLinks } from "../../content/socialMedia"
 
 const GetInTouchSection = ({ hideSocialMedia }) => {
   return (
@@ -9,7 +10,7 @@ const GetInTouchSection = ({ hideSocialMedia }) => {
       id="getInTouch"
       className="mt-[100px] md:mt-0 md:min-h-screen flex flex-col justify-center items-center"
     >
-      <a href="mailto:hasanhabka9@gmail.com?subject=Get%20In%20Touch">
+      <a href={`mailto:${socialMediaLinks.email}?subject=Get%20In%20Touch`}>
         <div
           data-aos="fade-up"
           className="group relative cursor-pointer hover:scale-105 transition-all duration-300 h-[170px] md:h-[260px] md:rounded-xl bg-[#12121222] w-[100vw] md:w-[80vw]"
@@ -17,7 +18,7 @@ const GetInTouchSection = ({ hideSocialMedia }) => {
           <div className="absolute text-white tracking-wider  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:opacity-0 transition-all duration-500 group-hover:opacity-100">
             <TextSplitter
               strokeWordsArray={[0]}
-              text="hasanhabka9@gmail.com "
+              text={socialMediaLinks.email}
             />
           </div>
           <div className="absolute bottom-0  translate-y-1/2 left-0 w-full text-center">
@@ -31,7 +32,7 @@ const GetInTouchSection = ({ hideSocialMedia }) => {
       {!hideSocialMedia && (
         <div className="md:mt-10 my-8  md:mb-0 mb-[140px]  flex items-center justify-center gap-8">
           <a
-            href="https://www.facebook.com/share/1EfsfAKVAy"
+            href={socialMediaLinks.facebook}
             target="_blank"
             data-aos="fade-down"
             data-aos-delay="250"
@@ -42,7 +43,7 @@ const GetInTouchSection = ({ hideSocialMedia }) => {
             </div>
           </a>
           <a
-            href="https://www.linkedin.com/in/hasan-habka-374b81220"
+            href={socialMediaLinks.linkedin}
             target="_blank"
             data-aos="fade-down"
             data-aos-delay="300"
@@ -53,7 +54,7 @@ const GetInTouchSection = ({ hideSocialMedia }) => {
             </div>
           </a>
           <a
-            href="https://www.instagram.com/hasanhabka9"
+            href={socialMediaLinks.instagram}
             target="_blank"
             data-aos="fade-down"
             data-aos-delay="300"
@@ -64,7 +65,7 @@ const GetInTouchSection = ({ hideSocialMedia }) => {
             </div>
           </a>
           <a
-            href={`https://api.whatsapp.com/send?phone=971527416292&text=Hi`}
+            href={`https://api.whatsapp.com/send?phone=${socialMediaLinks.whatsappNumber}&text=Hi`}
             target="_blank"
             data-aos="fade-down"
             data-aos-delay="250"

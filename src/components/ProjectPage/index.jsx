@@ -1,25 +1,19 @@
 import React, { lazy } from "react"
 import { useParams } from "react-router-dom"
-const Dockwise = lazy(() => import("./projects/dockwise"))
-const DryDock = lazy(() => import("./projects/dryDock"))
+import ProjectContentRenderer from "./ProjectContentRenderer"
+import { projectsData } from "../../content/projects"
 const WorkSection = lazy(() => import("../WorkSection/index"))
 const GetInTouchSection = lazy(() => import("../GetInTouchSection"))
-
-const projects = {
-  dockwise: Dockwise,
-  dryDock: DryDock,
-}
 
 const ProjectPage = () => {
   const params = useParams()
   const projectName = params["projectName"]
-  const ProjectToRender = projects[projectName]
+  const projectToRender = projectsData[projectName]
 
   return (
     <div className="bg-[#121212AA]">
-      {ProjectToRender && <ProjectToRender />}
-
-      <div className="mt-[300px]">
+      <ProjectContentRenderer {...projectToRender} />
+      <div className="pb-[120px]">
         <WorkSection cardToHide={projectName} title="MORE WORK" />
         <GetInTouchSection hideSocialMedia />
       </div>
