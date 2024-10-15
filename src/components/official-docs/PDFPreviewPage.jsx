@@ -30,18 +30,11 @@ const pdfSelector = {
 const PDFPrepreviewPage = () => {
   const params = useParams()
   return (
-    // <object
-    //   aria-label="pdf"
-    //   className="w-screen h-screen"
-    //   // data={pdfSelector[params["fileName"]]}
-    //   data="https://drive.google.com/uc?id=1uWNb27HRJT5ycdBom6hBFeqbKzHTYBYg"
-    //   type="application/pdf"
-    // />
     <iframe
       src={pdfSelector[params["fileName"]]}
       width="100%"
       allow="autoplay"
-      className="h-screen"
+      className="h-screen "
       title="pdf prepreview"
     />
   )

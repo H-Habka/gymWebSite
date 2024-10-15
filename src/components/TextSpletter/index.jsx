@@ -1,6 +1,6 @@
 import React, { useRef } from "react"
 
-const TextSplitter = ({ text, strokeWordsArray }) => {
+const TextSplitter = ({ withoutAnimation, text, strokeWordsArray }) => {
   const arrayOfWords = text.split(" ")
   const counter = useRef(0)
   return (
@@ -19,8 +19,12 @@ const TextSplitter = ({ text, strokeWordsArray }) => {
                     key={j}
                     style={{ WebkitTextStroke: "1px white" }}
                     className={`text-transparent`}
-                    data-aos="fade-right"
-                    data-aos-delay={counter.current * 50}
+                    {...(withoutAnimation
+                      ? {}
+                      : {
+                          "data-aos": "fade-right",
+                          "data-aos-delay": counter.current * 50,
+                        })}
                   >
                     {letter}
                   </span>
@@ -28,8 +32,12 @@ const TextSplitter = ({ text, strokeWordsArray }) => {
               return (
                 <span
                   key={j}
-                  data-aos="fade-right"
-                  data-aos-delay={counter.current * 50}
+                  {...(withoutAnimation
+                    ? {}
+                    : {
+                        "data-aos": "fade-right",
+                        "data-aos-delay": counter.current * 50,
+                      })}
                 >
                   {letter}
                 </span>

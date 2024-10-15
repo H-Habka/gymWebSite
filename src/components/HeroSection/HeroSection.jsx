@@ -1,16 +1,16 @@
 import React from "react"
 import CustomButton from "../CustomButton"
-import StrokText from "../StrokText"
 import { LazyLoadImage } from "react-lazy-load-image-component"
+import TextSplitter from "../TextSpletter"
 
 const HeroSection = () => {
   return (
-    <div id="home" className="flex flex-col md:flex-row h-screen relative">
+    <div id="home" className="flex flex-col md:flex-row md:h-screen relative">
       <div
         onClick={() => {
           window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
         }}
-        className="hover:scale-110 transition-all duration-500 opacity-30 hover:opacity-100 cursor-pointer  absolute left-1/2 bottom-3 w-8 h-16 rounded-full border-2 flex border-gray-400 -translate-x-1/2 group"
+        className="hidden md:flex hover:scale-110 transition-all duration-500 opacity-30 hover:opacity-100 cursor-pointer  absolute left-1/2 bottom-3 w-8 h-16 rounded-full border-2 border-gray-400 -translate-x-1/2 group"
       >
         <div className="transition-all duration-700 flex items-center group-hover:translate-y-7 justify-center w-8 h-8 rounded-full bg-gray-700">
           <div className="w-2 h-2 bg-gray-200 rounded-full"></div>
@@ -20,16 +20,12 @@ const HeroSection = () => {
         <div className="flex flex-col gap-2 px-2 md:px-10 md:w-10/12 w-full items-center md:items-start ">
           <h1 className=" font-bold flex flex-col gap-4 my-[50px]">
             <div style={{ boxShadow: "0 0 1000000px 60px #f48915" }} />
-            <p className="text-[80px]">
-              <StrokText content="HASAN" />{" "}
-              <span className="text-white">HABKA</span>
-            </p>
-            <p className="animate-pulse mt-6">
-              <span className="text-white text-5xl uppercase">Naval </span>{" "}
-              <span className="text-white text-5xl uppercase">
-                Architecture
-              </span>{" "}
-            </p>
+            <div className="md:text-[80px] text-[50px] md:block flex justify-center text-white">
+              <TextSplitter strokeWordsArray={[0]} text="HASAN HABKA" />{" "}
+            </div>
+            <div className="animate-pulse mt-[-24px] md:mt-6 text-3xl  text-white md:text-5xl uppercase">
+              <TextSplitter text="Naval Architecture" />
+            </div>
           </h1>
           <a href="#getInTouch">
             <CustomButton title="Get in touch" reversed />

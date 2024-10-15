@@ -6,11 +6,14 @@ const CompaniesIworkedWith = () => {
   return (
     <div
       data-aos="fade-up"
-      className="md:px-[10vw] min-h-[100vh] flex flex-col justify-center"
+      className="mt-[100px] md:mt-0 md:px-[10vw] md:h-[60vh] flex flex-col justify-center"
     >
-      <div className=" flex justify-between  md:flex-row gap-10 items-center  bg-[#12121222] p-8 rounded-xl">
-        <div className="py-20 text-4xl md:max-w-[40vw] flex gap-2 text-four">
-          <TextSplitter strokeWordsArray={[0, 1, 2]} text="I worked With" />
+      <div className="pt-10 flex flex-col justify-between  md:flex-row gap-10 items-center  bg-[#12121222] md:p-8 pb-8 md:rounded-xl">
+        <div className="md:py-20 font-bold text-4xl md:max-w-[40vw] flex gap-2 text-four">
+          <TextSplitter
+            strokeWordsArray={[0, 1, 2, 3]}
+            text="I Have worked With"
+          />
         </div>
         <div className="flex gap-10 flex-1 items-center justify-evenly [&_img]:rounded-xl hover:[&_img]:-translate-y-1 hover:[&_img]:-translate-x-1 [&_img]:transition-all [&_img]:duration-200 hover:[&_img]:shadow-[10px_10px_10px_2px_#121212] [&_img]:w-[120px] [&_img]:h-[120px] [&>a]:justify-self-center">
           <a
