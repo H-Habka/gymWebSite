@@ -56,7 +56,7 @@ function App() {
               )}
             />
             <Route
-              path="/preview/:fileName"
+              path="/preview"
               Component={() => <PDFPreviewPage />}
             />
             <Route
