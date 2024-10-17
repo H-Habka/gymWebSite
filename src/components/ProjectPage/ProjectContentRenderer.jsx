@@ -2,12 +2,14 @@ import React from "react"
 import TextSplitter from "../TextSpletter"
 import Tags from "./Tags"
 import PhotoGallery from "../../content/projects/photoGallery"
+import YoutubeVideoRenderer from "./youtubeVideoRenderer"
 
 const ProjectContentRenderer = ({
   title,
   descriptionBlocks,
   tags,
   photoGallery,
+  videos,
 }) => {
   return (
     <div className=" md:px-[10vw] pt-10 md:min-h-screen flex flex-col justify-center">
@@ -53,6 +55,21 @@ const ProjectContentRenderer = ({
             )
           }
         )}
+        {videos?.map(({ title, videoId, strokeWordsArray }) => {
+          return (
+            <div className="mt-20">
+              <div className="mb-6 text-white text-[32px] font-bold tracking-wide  md:text-[80px] flex justify-center ">
+                <TextSplitter
+                  strokeWordsArray={strokeWordsArray}
+                  text={title}
+                />
+              </div>
+              <div data-aos="zoom-in-up" className="h-[80vh]">
+                <YoutubeVideoRenderer videoId={videoId} />
+              </div>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
