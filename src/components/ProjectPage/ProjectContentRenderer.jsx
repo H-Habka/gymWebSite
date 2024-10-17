@@ -17,7 +17,7 @@ const ProjectContentRenderer = ({
         <div className=" md:max-w-[50%]">
           <div className="flex items-center justify-between">
             <div className="md:text-[100px] text-[60px] font-bold">
-              <TextSplitter text={title} />
+              <TextSplitter containerClassName="justify-start" text={title} />
             </div>
           </div>
           <div className="flex flex-col gap-4">
