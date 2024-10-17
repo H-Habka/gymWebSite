@@ -1,3 +1,4 @@
+import React from "react"
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
 import { lazy, Suspense } from "react"
 import "aos/dist/aos.css"
