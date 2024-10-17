@@ -1,7 +1,7 @@
 export const generalDetails = {
-  name: "HASAN HABKA",
-  jobTitle: "Naval Architect",
-  descriptionTitle: "Hi, I'm Yacht and Jewellery designer",
+  name: "HOSSIEN HABKA",
+  jobTitle: "Frontend Developer",
+  descriptionTitle: "Hi, I'm a Web Developer",
   descriptionContent:
-    "I graduated from Tishreen University with a degree in Marine Engineering, achieving a graduation rate of 85.4%, which earned me the top position in my class. My dedication and excellence in my graduation project were recognized with an Appreciation Certificate from Mire Marine Shipping Company and Mobin Marine Design Technical Engineering.",
+    "Experienced Web Developer with 4 years of hands-on expertise in all stages of advanced web development, including user interface design, testing, and debugging processes. Proficient in technologies such as JavaScript, React, Next and Node.js, and experienced in building scalable, responsive, and secure web applications. Demonstrated success in improving website performance and user experience while adhering to best practices in coding and security.",
 }
