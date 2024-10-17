@@ -31,7 +31,7 @@ function App() {
         <ScrollToTop />
         <div
           className="bg-one"
-          style={{ backgroundImage: `url(/images/bg.webp)` }}
+          style={{ backgroundImage: `url(/images/bg.png)` }}
         >
           <NavbarV2 />
           <Routes>
