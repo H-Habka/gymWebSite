@@ -32,7 +32,7 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-      <div className="mt-[80px] flex items-start justify-center md:w-3/12 bg-transparent md:bg-two relative md:h-auto z-1 ">
+      <div className="mt-20 md:mt-0 flex items-start justify-center md:w-3/12 bg-transparent md:bg-two relative md:h-auto z-1 ">
         <LazyLoadImage
           loading="lazy"
           src="/images/hero.webp"
@@ -43,9 +43,9 @@ const HeroSection = () => {
           loading="lazy"
           src="/images/profile.webp"
           alt="hero1"
-          className="min-h-[300px] animate-bounce-2 scale-105 md:absolute left-0  bottom-[50px] max-w-[320px] w-10/12 md:w-auto rounded-full"
+          className="animate-profile  min-h-[300px] animate-bounce-2 scale-105 md:absolute left-0  bottom-[12vh] max-w-[320px] w-10/12 md:w-auto rounded-full"
           style={{
-            boxShadow: "0px 12px 12px 5px rgba(0,0,0,.8)",
+            boxShadow: "0px 15px 25px 8px rgba(0,0,0,.5)",
           }}
         />
       </div>

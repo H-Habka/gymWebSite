@@ -9,10 +9,7 @@ module.exports = {
         },
         extend: {
             colors: {
-                // one: "#55565b",
-                // one: "#44465b",
-                one: "#24262b",
-                // two: "#f48915",
+                one: "#2A2C2F",
                 two: "#E06000",
                 three: "#d55A54",
                 four: "#e19f51",
