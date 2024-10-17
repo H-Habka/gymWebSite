@@ -1,10 +1,18 @@
 import React, { useRef } from "react"
+import { twMerge } from "tailwind-merge"
 
-const TextSplitter = ({ withoutAnimation, text, strokeWordsArray }) => {
+const TextSplitter = ({
+  withoutAnimation,
+  text,
+  strokeWordsArray,
+  containerClassName,
+}) => {
   const arrayOfWords = text.split(" ")
   const counter = useRef(0)
   return (
-    <div className="flex flex-wrap justify-center">
+    <div
+      className={twMerge("flex flex-wrap justify-center", containerClassName)}
+    >
       {arrayOfWords.map((word, i) => {
         return (
           <div key={i}>

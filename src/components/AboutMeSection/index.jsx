@@ -1,5 +1,6 @@
 import React from "react"
 import TextSplitter from "../TextSpletter"
+import { generalDetails } from "../../content/generalDetails"
 
 const AboutMe = () => {
   return (
@@ -17,7 +18,7 @@ const AboutMe = () => {
         <div className="md:text-6xl text-4xl md:max-w-[40vw] flex gap-2 text-four">
           <TextSplitter
             strokeWordsArray={[0]}
-            text="Hi, I'm Yacht and Jewellery designer"
+            text={generalDetails.descriptionTitle}
           />
         </div>
         <div
@@ -26,12 +27,7 @@ const AboutMe = () => {
           data-aos-duration="700"
           className="md:max-w-[40vw] text-white text-lg "
         >
-          I graduated from Tishreen University with a degree in Marine
-          Engineering, achieving a graduation rate of 85.4%, which earned me the
-          top position in my class. My dedication and excellence in my
-          graduation project were recognized with an Appreciation Certificate
-          from Mire Marine Shipping Company and Mobin Marine Design Technical
-          Engineering.
+          {generalDetails.descriptionContent}
         </div>
       </div>
     </div>
