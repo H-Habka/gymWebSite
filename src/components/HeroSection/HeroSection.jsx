@@ -41,7 +41,7 @@ const HeroSection = () => {
         />
         <LazyLoadImage
           loading="lazy"
-          src="/images/profile.png"
+          src="/images/profile.webp"
           alt="hero1"
           className="min-h-[300px] animate-bounce-2 scale-105 md:absolute left-0  bottom-[50px] max-w-[320px] w-10/12 md:w-auto rounded-full"
           style={{
