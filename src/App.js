@@ -55,10 +55,7 @@ function App() {
                 </>
               )}
             />
-            <Route
-              path="/preview"
-              Component={() => <PDFPreviewPage />}
-            />
+            <Route path="/preview" Component={() => <PDFPreviewPage />} />
             <Route
               path="/projects/:projectName"
               Component={() => <ProjectPage />}
