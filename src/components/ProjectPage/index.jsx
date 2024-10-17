@@ -11,7 +11,7 @@ const ProjectPage = () => {
   const projectToRender = projectsData[projectName]
 
   return (
-    <div className="bg-[#121212AA]">
+    <div>
       <ProjectContentRenderer {...projectToRender} />
       <div className="pb-[120px]">
         <WorkSection cardToHide={projectName} title="MORE WORK" />
