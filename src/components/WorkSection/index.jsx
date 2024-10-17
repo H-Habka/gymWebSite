@@ -40,12 +40,18 @@ const WorkSection = ({ title, isSticky, cardToHide }) => {
                   <div className="flex flex-col md:flex-row h-full">
                     <LazyLoadImage
                       className="lg:w-1/2 flex-1 h-full"
-                      src={project.photoGallery?.[0]?.images?.[0]?.original}
+                      src={
+                        project?.cardImages?.[0] ??
+                        project.photoGallery?.[0]?.images?.[0]?.original
+                      }
                       alt={project?.name}
                     />
                     <LazyLoadImage
                       className="lg:w-1/2 flex-1 h-full"
-                      src={project.photoGallery?.[0]?.images?.[1]?.original}
+                      src={
+                        project?.cardImages?.[1] ??
+                        project.photoGallery?.[0]?.images?.[1]?.original
+                      }
                       alt={project?.name}
                     />
                   </div>
