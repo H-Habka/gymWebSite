@@ -35,13 +35,13 @@ const HeroSection = () => {
       <div className="mt-[80px] flex items-start justify-center md:w-3/12 bg-transparent md:bg-two relative md:h-auto z-1 ">
         <LazyLoadImage
           loading="lazy"
-          src="/images/hero2.webp"
-          alt="hero2"
+          src="/images/hero.webp"
+          alt="hero"
           className="absolute md:top-1/4 md:-left-1/2 h-4/6 -z-1 left-1/4  top-0 transition-all duration-1000"
         />
         <LazyLoadImage
           loading="lazy"
-          src="/images/hasan-profile-image.png"
+          src="/images/profile.png"
           alt="hero1"
           className="min-h-[300px] animate-bounce-2 scale-105 md:absolute left-0  bottom-[50px] max-w-[320px] w-10/12 md:w-auto rounded-full"
           style={{
