@@ -2,6 +2,7 @@ import React from "react"
 import CustomButton from "../CustomButton"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import TextSplitter from "../TextSpletter"
+import { generalDetails } from "../../content/generalDetails"
 
 const HeroSection = () => {
   return (
@@ -21,10 +22,13 @@ const HeroSection = () => {
           <h1 className=" font-bold flex flex-col gap-4 my-[50px]">
             <div style={{ boxShadow: "0 0 1000000px 60px #f48915" }} />
             <div className="md:text-[80px] text-[50px] md:block flex justify-center text-white">
-              <TextSplitter strokeWordsArray={[0]} text="HASAN HABKA" />{" "}
+              <TextSplitter strokeWordsArray={[0]} text={generalDetails.name} />
             </div>
             <div className="animate-pulse mt-[-24px] md:mt-6 text-3xl  text-white md:text-5xl uppercase">
-              <TextSplitter text="Naval Architecture" />
+              <TextSplitter
+                containerClassName="justify-start"
+                text={generalDetails.jobTitle}
+              />
             </div>
           </h1>
           <a href="#getInTouch">
