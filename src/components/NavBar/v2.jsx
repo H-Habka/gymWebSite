@@ -52,7 +52,7 @@ const NavbarV2 = () => {
             <div className="rounded-full bg-gray-200 grayscale hover:grayscale-0 cursor-pointer z-10">
               <LazyLoadImage
                 loading="lazy"
-                src="/images/profile-small.png"
+                src="/images/profile-small.webp"
                 alt="profile"
                 className="w-10 h-10 rounded-full"
               />
