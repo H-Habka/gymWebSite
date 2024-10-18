@@ -7,7 +7,7 @@ export const militaryVesselDetails = {
   tags: ["3D model", "autocad", "Solidworks"],
   videos: [{ title: "Design", videoId: "gCfbiYrcaow" }],
   cardImages: [
-    "https://i.imgur.com/sXsd4LT.jpeg",
-    "https://i.imgur.com/oZQyzAo.jpeg",
+    "https://i.imgur.com/8IZLbWK.jpeg",
+    "https://i.imgur.com/twdVJU7.jpeg",
   ],
 }

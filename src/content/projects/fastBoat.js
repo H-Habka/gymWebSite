@@ -15,7 +15,7 @@ export const fastBoatDetails = {
     },
   ],
   cardImages: [
-    "https://i.imgur.com/sXsd4LT.jpeg",
-    "https://i.imgur.com/oZQyzAo.jpeg",
+    "https://i.imgur.com/b2RsR5A.jpeg",
+    "https://i.imgur.com/dHpLwiC.jpeg",
   ],
 }
