@@ -64,7 +64,7 @@ const ProjectContentRenderer = ({
                   text={title}
                 />
               </div>
-              <div data-aos="zoom-in-up" className="h-[80vh]">
+              <div data-aos="zoom-in-up" className="h-[calc(9/16*100vw)] md:h-[80vh]">
                 <YoutubeVideoRenderer videoId={videoId} />
               </div>
             </div>
